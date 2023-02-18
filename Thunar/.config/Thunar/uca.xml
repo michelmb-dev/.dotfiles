@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Ouvrir un terminal ici</name>
+	<unique-id>1616507653951107-1</unique-id>
+	<command>urxvt</command>
+	<description>ouvre le terminal URXVT</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>folder-search</icon>
+	<name>Recherche</name>
+	<unique-id>1656097968328562-1</unique-id>
+	<command>catfish --path=%f</command>
+	<description>Recherche de fichier</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>
