@@ -1,45 +1,6 @@
 ﻿! ===============================
 !       urxvt
 ! ===============================
-
-! special
-URxvt.background: #24273A
-URxvt.foreground: #CAD3F5
-URxvt.cursorColor: #A5ADCB
-
-! black
-URxvt.color0: #494D64
-URxvt.color8: #5B6078
-
-! red
-URxvt.color1: #ED8796
-URxvt.color9: #ED8796
-
-! green
-URxvt.color2: #A6DA95
-URxvt.color10: #A6DA95
-
-! yellow
-URxvt.color3: #EED49F
-URxvt.color11: #EED49F
-
-! blue
-URxvt.color4: #8AADF4
-URxvt.color12: #8AADF4
-
-! magenta
-URxvt.color5: #F5BDE6
-URxvt.color13: #F5BDE6
-
-! cyan
-URxvt.color6: #8BD5CA
-URxvt.color14: #8BD5CA
-
-! white
-URxvt.color7: #B8C0E0
-URxvt.color15: #A5ADCB
-
-
 URxvt.letterSpace:      -1
 URxvt.lineSpace:				1
 URxvt.geometry:					120x50
@@ -87,27 +48,43 @@ Xft.rgba:               subpixel
 Xft.dpi:                96
 
 !================================
-! tango theme colors
+! colors theme catppuccin-moccha
 !================================
 
-*background:              #303446
-*foreground:              #C6D0F5
-*color0:                  #2e3436
-*color1:                  #cc0000
-*color2:                  #4e9a06
-*color3:                  #c4a000
-*color4:                  #3465a4
-*color5:                  #75507b
-*color6:                  #06989a
-*color7:                  #d3d7cf
-*color8:                  #555753
-*color9:                  #ef2929
-*color10:                 #8ae234
-*color11:                 #fce94f
-*color12:                 #729fcf
-*color13:                 #ad7fa8
-*color14:                 #34e2e2
-*color15:                 #eeeeec
+*background: #1E1E2E
+*foreground: #CDD6F4
+
+! black
+*color0: #45475A
+*color8: #585B70
+
+! red
+*color1: #F38BA8
+*color9: #F38BA8
+
+! green
+*color2: #A6E3A1
+*color10: #A6E3A1
+
+! yellow
+*color3: #F9E2AF
+*color11: #F9E2AF
+
+! blue
+*color4: #89B4FA
+*color12: #89B4FA
+
+! magenta
+*color5: #F5C2E7
+*color13: #F5C2E7
+
+! cyan
+*color6: #94E2D5
+*color14: #94E2D5
+
+! white
+*color7: #BAC2DE
+*color15: #A6ADC8
 
 
 
