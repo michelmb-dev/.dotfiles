@@ -40,8 +40,8 @@ URxvt.color7: #B8C0E0
 URxvt.color15: #A5ADCB
 
 
-URxvt.letterSpace:      0
-URxvt.lineSpace:				0
+URxvt.letterSpace:      -1
+URxvt.lineSpace:				1
 URxvt.geometry:					120x50
 URxvt.internalBorder:   12
 URxvt.cursorBlink:      true 
@@ -54,19 +54,21 @@ URxvt*utf8:	            true
 URxvt.iso14755:         false
 URxvt.iso14755_52:      false
 
-URxvt*font:            		xft:Iosevka Mayukai Monolite:style=Regular:size=12
-URxvt*boldFont:        		xft:Iosevka Mayukai Monolite:style=Bold:size=12
-URxvt*italicFont:        	xft:Iosevka Mayukai Monolite:style=Italic:size=12
-URxvt*boldItalicFont:     xft:Iosevka Mayukai Monolite:style=Bold Italic:size=12
+! URxvt*font:            		xft:Iosevka Mayukai Monolite:style=Regular:size=12
+! URxvt*boldFont:        		xft:Iosevka Mayukai Monolite:style=Bold:size=12
+! URxvt*italicFont:        	xft:Iosevka Mayukai Monolite:style=Italic:size=12
+! URxvt*boldItalicFont:     xft:Iosevka Mayukai Monolite:style=Bold Italic:size=12
 
-! URxvt*font:             xft:Menlo for Powerline:regular:size=11
-! URxvt*boldFont:         xft:Menlo for Powerline:bold:size=11
+! URxvt*font:            		xft:Hack Nerd Font Mono FC Ligatured:style=Regular:size=10
+! URxvt*boldFont:        		xft:Hack Nerd Font Mono FC Ligatured:style=Bold:size=10
+! URxvt*italicFont:        	xft:Hack Nerd Font Mono FC Ligatured:style=Italic:size=10
+! URxvt*boldItalicFont:     xft:Hack Nerd Font Mono FC Ligatured:style=Bold Italic:size=10
 
-! URxvt*font:             xft:Droid Sans Mono Nerd Font:regular:size=14
-! URxvt*boldFont:         xft:Droid Sans Mono Nerd Font:bold:size=14
+URxvt*font:            		xft:Hack Nerd Font:style=Regular:size=10
+URxvt*boldFont:        		xft:Hack Nerd Font:style=Bold:size=10
+URxvt*italicFont:        	xft:Hack Nerd Font:style=Italic:size=10
+URxvt*boldItalicFont:     xft:Hack Nerd Font:style=Bold Italic:size=10
 
-! URxvt*font:             xft:Fira Code:regular:size=12,
-! URxvt*boldFont:         xft:Fira Code:bold:size=12
 
 URxvt.perl-ext-common:  default,matcher,resize-font
 URxvt.url-launcher:     google-chrome-stable
