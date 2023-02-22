@@ -2,7 +2,7 @@ configuration{
     modi: "drun,run,window,ssh";
     icon-theme: "Oranchelo";
     show-icons: true;
-    terminal: "Alacritty";
+    terminal: "alacritty";
     drun-display-format: "{icon} {name}";
     location: 0;
     disable-history: false;
@@ -13,6 +13,7 @@ configuration{
     display-Network: "Network";
     sidebar-mode: true;
     shell: "/bin/zsh";
+    run-command: "'{terminal}' -e '{cmd}'";
 }
 
 @theme "catppuccin-mocha"
