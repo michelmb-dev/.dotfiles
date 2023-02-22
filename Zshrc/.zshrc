@@ -49,6 +49,15 @@ zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
 # comme la recherche d'un paquet aptitude install moz<tab>
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh_cache
+
+# Complétion des commandes kill killall
+zstyle ':completion:*:processes' command 'ps -ax'
+zstyle ':completion:*:processes-names' command 'ps -aeo comm='
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+zstyle ':completion:*:*:kill:*' menu yes select
+zstyle ':completion:*:*:killall:*:processes-names' list-colors '=(#b) #([0-9]#)*=0=01;31'
+zstyle ':completion:*:*:killall:*' menu yes select
+
 # des couleurs pour la complétion
 # faites un kill -9 <tab><tab> pour voir :)
 zmodload zsh/complist
@@ -56,12 +65,12 @@ setopt extendedglob
 zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
 
 # Correction des commandes
-#setopt correctall
+setopt correctall
  
 # Un petit prompt sympa
-#autoload -U promptinit
-#promptinit
-#prompt arch 8bit
+# autoload -U promptinit
+# promptinit
+# prompt arch 8bit
  
 # Les alias marchent comme sous bash
 alias ls='ls --color=auto'
@@ -118,9 +127,9 @@ bindkey "^[[B" down-line-or-search
 # Zsh-Syntax-highlighting
 source '/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh'
 source '/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh'
-source '/home/michel/.config/zsh/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh'
-source '/home/michel/.config/zsh/git-prompt/git-prompt.zsh'
-source '/home/michel/.config/zsh/git-prompt/themes/arch_prompt.zsh'
+source '/home/michel/.config/zsh/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh'
+# source '/home/michel/.config/zsh/git-prompt/git-prompt.zsh'
+# source '/home/michel/.config/zsh/git-prompt/themes/arch_prompt.zsh'
 #source '/usr/share/nvm/init-nvm.sh'
 
 
@@ -134,12 +143,4 @@ export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
 
 
 alias emul='emulator -avd Nexus_6_API_30 -netdelay none -netspeed full &'
-
-# pnpm
-#export PNPM_HOME="/home/michel/.local/share/pnpm"
-#export PATH="$PNPM_HOME:$PATH"
-# pnpm end
-
-#export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
