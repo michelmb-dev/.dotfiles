@@ -13,7 +13,8 @@ configuration{
     display-Network: "Network";
     sidebar-mode: true;
     shell: "/bin/zsh";
-    run-command: "'{terminal}' -e '{cmd}'";
+    //drun-command: "'{cmd}'";
+    //run-command: "'{terminal}' -e '{cmd}'";
 }
 
 @theme "catppuccin-mocha"
